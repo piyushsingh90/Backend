@@ -42,4 +42,4 @@ mongoose.connect('mongodb://test:test123@ds121652.mlab.com:21652/mean', {useNewU
         console.log('connected to mongoDb')
 })
 
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
